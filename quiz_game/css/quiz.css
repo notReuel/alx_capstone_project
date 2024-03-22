@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    padding: 2px;
+}
+
+.small-flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.choice-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.choice-text {
+    width: 100%
+}
+
+/* ==== ANSWER FEEDBACK === */
+.correct {
+    background-color: green;
+}
+
+.incorrect {
+    background-color: red;
+}

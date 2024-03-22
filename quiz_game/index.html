@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Quiz App</title>
+    <link rel="stylesheet" href=".\css\styles.css">
+</head>
+<body>
+    <div class="container">
+            <div class="header">
+                <div class="logoText" id="logoText">
+                    <h1>The Quiz App</h1>
+                </div>
+                <div class="subText">
+                    <h2>
+                        Test your programming knowledge with the 
+                        same technical questions top tech companies 
+                        use in interviews
+                    </h2>
+                </div>
+            </div>
+
+            <div class="leaderboard">
+                <h2 class="leaderboard-h2">
+                    LEADERBOARD
+                </h2>
+                <table id="leaderBoard" class="leaderBoard-table"></table>
+
+                <div class="btn">
+                    <button class="button" id="regBtn" onclick="">Start Quiz</button>
+                </div>
+            </div>
+
+        </div>
+        <div id="home" class="flex-center flex-column">
+
+            <!-- Registration MODAL -->
+            <div id="regModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2 class="modal-h2">Tell us your name?</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form id="modal-form">
+                            <input type="text" name="username" id="username"> 
+                            <button type="submit" id="saveNameBtn" class="button modal-btn" disabled>Start Quiz</button>
+                        </form>
+                    </div>
+                 </div>
+            </div>
+    </div>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/quizScores.js"></script>
+</body>
+</html>
