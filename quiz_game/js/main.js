@@ -69,5 +69,15 @@ function savePlayerName (name) {
     window.location.assign("/quiz.html")
 }
 
+// saveName = e => {
+//     // const name = formData.get("username")
+//     console.log(`${username.value}, clicked the save button!`);
+//     e.preventDefault();
 
+//     localStorage.setItem("name", username.value)
+// };
+
+// saveName = e => {
+//     console.log('You clicked submit')
+// }
 
