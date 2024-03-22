@@ -4,26 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Quiz App - quiz over</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    
     <div class="container">
+        <div class="myContainer">        
+            <div id="quiz" class="small-flex-column ">
+            </div>
+            <div id="quiz" class="large-flex-column">
+                <div class="hud finalScoreHead">
+                    <div class="question-div trackers">
+                        <p class="banner-prefix-hud">FINAL SCORE </p>
+                        <!-- <h2 class="banner-main-text" id="questionCounterText">1/5</h2> -->
+                    </div>
+                    <div class="score-div trackers">
+                        <!-- <p class="banner-prefix-hud">SCORE: </p>
+                        <h2 class="banner-main-text" id="scoreText">0</h2> -->
+                    </div>
+                </div>
+                <div class="question-box ">
+                    <div class="finalScoreBody">
+                        <div class="para">
+                            <p>
+                                <strong><span id="playerNameResult">$PLAYER$</span> SCORED 
+                                <span id="playerScoreResult">120/100</span> </strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="saveScoreBtn">
+                    <button type="submit" class="button" id="saveScoreBtn" onclick="saveQuizScore(event)" >SAVE AND CONTINUE</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- <div class="container">
         <div class="score">
             <div class="score-head">
                 <h2>
                     FINAL SCORE
                 </h2>
-            </div>
-            <p>
-                <span id="playerNameResult">$PLAYER$</span> SCORED 
-                <span id="playerScoreResult">120/100</span>
-                <!-- onclick="saveHighScore(event)" -->
-            </p>
-            
-            <button type="submit" id="saveScoreBtn" onclick="saveQuizScore(event)" >SAVE AND CONTINUE</button>
-
-        </div>
-        <!-- <div class="btn-div">
+            </div> -->
+            <!-- <div class="score-body">
+                <h2>
+                    NAME
+                </h2>
+                <h2>
+                    0
+                </h2>
+            </div> -->
+        <!-- </div>
+        <div class="btn-div">
             <a href="/quiz.html" class="btn">Replay Test</a>
             <a href="/index.html" class="btn">Go home</a>
         </div> -->
@@ -41,9 +74,9 @@
                 <div class="modal-body">
                     <p>
                         <span id="playerNameResult">$PLAYER$</span> SCORED 
-                        <span id="playerScoreResult">120/100</span>
-                         onclick="saveHighScore(event)" -->
-                        <!--<button type="submit" id="saveScoreBtn" onclick="saveQuizScore(event)" >SAVE AND CONTINUE</button>
+                        <span id="playerScoreResult">120/100</span> -->
+                        <!-- onclick="saveHighScore(event)" -->
+                        <!-- <button type="submit" id="saveScoreBtn" onclick="saveQuizScore(event)" >SAVE AND CONTINUE</button>
                     </p>
                 </div>
             </div>

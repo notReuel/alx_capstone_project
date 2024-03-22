@@ -17,12 +17,9 @@
     <link rel="stylesheet" href=".\css\quiz.css">
 </head>
 <body>
-    <div class="container">
-        <!-- <div id="loader" > -->
-            <div class="hidden" id="fullContainer">
 
-            </div>
-            
+    <div class="container">
+        <div class="myContainer">        
             <div id="quiz" class="small-flex-column ">
                 <div id="banner-div">
                     <p class="banner-prefix">Time Left</p>
@@ -33,17 +30,17 @@
             </div>
             <div id="quiz" class="large-flex-column">
                 <div class="hud">
-                    <div>
-                        <p class="banner-prefix">Questions</p>
+                    <div class="question-div trackers">
+                        <p class="banner-prefix-hud">QUESTION: </p>
                         <h2 class="banner-main-text" id="questionCounterText">1/5</h2>
                     </div>
-                    <div class="score-div">
-                        <p class="banner-prefix">Score</p>
+                    <div class="score-div trackers">
+                        <p class="banner-prefix-hud">SCORE: </p>
                         <h2 class="banner-main-text" id="scoreText">0</h2>
                     </div>
                 </div>
                 <div class="question-box">
-                    <p id="question">What is the answer to this question?</p>
+                    <p id="question" class="questions">What is the answer to this question?</p>
                     <div class="choice-container">
                         <p class="choice-prefix">A</p>
                         <!-- the data-number attaches the element below to a dataset with the key - 'number' and value of '1' i.e number: 1. It strips away the datakey work and leaves the name after the number-->
@@ -64,9 +61,12 @@
                         <!-- the data-number attaches the element below to a dataset with the key - 'number' and value of '1' i.e number: 1. It strips away the datakey work and leaves the name after the number-->
                         <p class="choice-text" data-number = "4">Choice D</p>
                     </div>
+                    <p class="hint">hint: <em><span id="hintMessage"> lorem ipsum</span></em> </p>
                 </div>
             </div>
-        </div>      
+                
+        </div>
+
     </div>
 </body>
 

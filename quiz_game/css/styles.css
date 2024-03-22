@@ -6,7 +6,7 @@
 
 *{
     box-sizing: border-box; /* to make sure the border does not increase the overall size of the box*/
-    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
@@ -23,7 +23,7 @@ h4 {
 
 h1 {
     font-size: 4rem;
-    color: #b6691d;
+    color: green;
     margin-bottom: 3rem;
 }
 
@@ -36,6 +36,11 @@ h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
     font-weight: 700;
+}
+
+p {
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 
@@ -52,6 +57,26 @@ h2 {
     margin: 0 auto;
 }
 
+.myContainer {
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    justify-content: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+    margin: 10%;
+    /* border: 1px solid black ; */
+
+
+/* HINT */
+.hint {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.hint-message {
+    
+}
+}
 .logoText {
     display: flex;
     flex-direction: column;
@@ -76,6 +101,36 @@ h2 {
     max-width: 80%;
 }
 
+.hud {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 1rem;
+}
+
+.trackers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.banner-main-text, .banner-prefix-hud {
+    color: #000;
+    margin: 0 0.5rem;
+}
+
+div#banner-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.questions {
+    margin: 1rem;
+}
 .btn {
     display: flex;
     justify-content: center;
@@ -175,7 +230,14 @@ form
     font-size: 1.8rem;
  }
 
-
+/* QUESTION BOX - DIV */
+.large-flex-column {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+}
 
 #loader {
     border: 1.6rem solid white;
@@ -209,3 +271,69 @@ form
     font-size: 16px;
     width: 100%;
   }
+
+  /* small buttons at page quizover2.html */
+  .replay-button {
+    background-color: green; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+  }
+
+  .home-button {
+    background-color: #FF9933; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .btn-div {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+  }
+
+
+  /* CHOICES */
+  .choice-container {
+    border: 1px solid green;
+    margin: 1rem;
+
+  }
+
+  .choice-text {
+    /* margin-left: 2rem; */
+    padding: 1rem;
+  }
+
+  .choice-prefix {
+    padding: 1rem;
+    background-color: green;
+  }
+
+  /* QUIZ OVER CSS */
+  .finalScoreHead {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+
+  .finalScoreBody {
+    display: flex;
+    flex-direction: column;
+    /* width: 80%; */
+    /* margin: 10%; */
+    align-items: center;
+    align-content: center;
+    height: 60vh;
+    justify-content: center;
+}
